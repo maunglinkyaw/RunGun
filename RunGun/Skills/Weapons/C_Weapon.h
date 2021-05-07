@@ -9,7 +9,7 @@
 
 class AC_MainCharacter;
 class AC_Projectile;
-class ACUI_GameplayHUD;
+class AC_GameplayHUD;
 
 UENUM(BlueprintType)
 enum class E_ReloadType : uint8
@@ -43,7 +43,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapon")
 	AC_MainCharacter* m_MainCharacter = nullptr;
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Weapon")
-	ACUI_GameplayHUD* m_GameplayHUD = nullptr;
+	AC_GameplayHUD* m_GameplayHUD = nullptr;
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadOnly, Category = "Skills", meta = (AllowPrivateAccess = "true"))
 	AActor* m_Owner = nullptr;
 

@@ -7,7 +7,7 @@
 #include "C_PlayerController.generated.h"
 
 class AC_MainCharacter;
-class ACUI_GameplayHUD;
+class AC_GameplayHUD;
 
 UENUM(Blueprintable)
 enum class E_InputMode : uint8
@@ -38,7 +38,7 @@ public:
 	E_MovementMode m_MovementMode = E_MovementMode::MOVEMENT_MODE;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = UI, meta = (AllowPrivateAccess = "true"))
-	ACUI_GameplayHUD* m_GameplayHUD = nullptr;
+	AC_GameplayHUD* m_GameplayHUD = nullptr;
 
 public:
 	AC_PlayerController();

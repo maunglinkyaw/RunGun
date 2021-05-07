@@ -4,16 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/HUD.h"
-#include "CUI_GameplayHUD.generated.h"
+#include "C_GameplayHUD.generated.h"
 
 class UCUI_GameplayScreen;
 
 UCLASS()
-class RUNGUN_API ACUI_GameplayHUD : public AHUD
+class RUNGUN_API AC_GameplayHUD : public AHUD
 {
 	GENERATED_BODY()
 public:
-	ACUI_GameplayHUD();
+	AC_GameplayHUD();
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = UI)
 	TSubclassOf<UCUI_GameplayScreen> m_GameplayUIClass = nullptr;

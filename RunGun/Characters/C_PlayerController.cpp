@@ -10,7 +10,7 @@
 
 #include "RunGun/RunGun.h"
 
-#include "RunGun/UI/Gameplay/CUI_GameplayHUD.h"
+#include "RunGun/UI/Gameplay/C_GameplayHUD.h"
 
 const FName AC_PlayerController::m_MoveUpBinding("MoveUp");
 const FName AC_PlayerController::m_MoveRightBinding("MoveRight");
@@ -42,7 +42,7 @@ void AC_PlayerController::BeginPlay()
 		//SetViewTarget(m_MainCharacter);
 	}
 
-	m_GameplayHUD = Cast<ACUI_GameplayHUD>(MyHUD);
+	m_GameplayHUD = Cast<AC_GameplayHUD>(MyHUD);
 
 	UE_LOG(LogUI, Log, TEXT("%s - BeginPlay - m_GameHUD: %s"), *GetName(), *GetNameSafe(m_GameplayHUD));
 }

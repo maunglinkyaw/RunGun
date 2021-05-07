@@ -12,7 +12,7 @@ class UCameraComponent;
 class UBoxComponent;
 class USpringArmComponent;
 class AC_PlayerController;
-class ACUI_GameplayHUD;
+class AC_GameplayHUD;
 class AC_Weapon;
 class AC_PickUp;
 
@@ -40,7 +40,7 @@ public:
 		FVector m_DesiredMovement = FVector::ZeroVector;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UI")
-	ACUI_GameplayHUD* m_GameplayHUD = nullptr;
+	AC_GameplayHUD* m_GameplayHUD = nullptr;
 
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Interaction", meta = (AllowPrivateAccess = "true"))

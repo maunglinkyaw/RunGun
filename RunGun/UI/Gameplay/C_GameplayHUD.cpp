@@ -1,16 +1,16 @@
 // Lin & Yin 2020
 
-#include "CUI_GameplayHUD.h"
+#include "C_GameplayHUD.h"
 #include "CUI_GameplayScreen.h"
 
 #include "RunGun/RunGun.h"
 
-ACUI_GameplayHUD::ACUI_GameplayHUD()
+AC_GameplayHUD::AC_GameplayHUD()
 {
 
 }
 
-void ACUI_GameplayHUD::BeginPlay()
+void AC_GameplayHUD::BeginPlay()
 {
 	Super::BeginPlay();
 
@@ -27,13 +27,13 @@ void ACUI_GameplayHUD::BeginPlay()
 	UE_LOG(LogUI, Log, TEXT("%s - BeginPlay - m_GameplayUI: %s"), *GetName(), *GetNameSafe(m_GameplayUI));
 }
 
-void ACUI_GameplayHUD::Tick(float DeltaSeconds)
+void AC_GameplayHUD::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
 }
 
-void ACUI_GameplayHUD::DrawHUD()
+void AC_GameplayHUD::DrawHUD()
 {
 	Super::DrawHUD();
 
